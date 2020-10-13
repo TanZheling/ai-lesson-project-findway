@@ -1,0 +1,16 @@
+<!--navigater.wxml-->
+
+<view>
+  <view>
+    <image wx:if="{{bgPic}}" src="{{bgPic}}" mode='widthFix'></image>
+    <view wx:else></view>
+  </view>
+  <view>
+    <button data-way="camera" bind:tap="chooseImage">使用相机</button>
+    <button data-way="album" bind:tap="chooseImage">相册选择</button>
+    <view>
+      <button bindtap='back'>返回</button>
+      <button bindtap='nextPage'>下一步</button>
+    </view>
+  </view>
+</view>

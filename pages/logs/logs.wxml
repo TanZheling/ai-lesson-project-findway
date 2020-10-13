@@ -1,0 +1,8 @@
+<!--logs.wxml-->
+<view>
+  <button bindtap='aestheticscore'>
+    <image src='../../image/cherry-blossom.jpg'></image>
+    <image src='../../image/cherry-blossom.jpg'></image>
+    <text>美学评分</text>
+  </button>
+  </view>

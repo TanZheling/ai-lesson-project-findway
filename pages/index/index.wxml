@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view>
+  <button bindtap='navigater'>
+    <image class = "cherry" src='../../image/cherry-blossom.jpg'></image>
+    <!--image src='../../image/cherry-blossom.jpg'></image-->
+    <text>寻路</text>
+  </button>
+  </view>
