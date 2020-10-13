@@ -18,7 +18,7 @@ Page({
 
   nextPage:function(e){
     wx.navigateTo({
-      url: '../process/process',
+      url: '../process/process?img='+this.data.bgPic,
     })
     },
   

@@ -1,1 +1,8 @@
-<view style='text-align:center;margin:20rpx;font-weight:600; font-family: "Microsoft Yahei";'>{{text}}</view>
+<view>
+  <image src="{{bgPic}}"  mode='widthFix'>
+  </image>
+</view>
+
+<view style='text-align:center;margin:20rpx;font-weight:600; font-family: "Microsoft Yahei";'>
+  是{{text1}}的概率是{{text2}}
+</view>

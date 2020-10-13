@@ -4,6 +4,9 @@ const app = getApp()
 
 Page({
   data: {
+  bgPic:null,
+  text1:null,
+  text2:null,
   
   },
   //事件处理函数
@@ -25,17 +28,20 @@ Page({
     onLoad: function (options) {
       wx.getImageInfo({
         src: app.globalData.bgPic,
-        text: app.globalData.result,
+        text: [app.globalData.result,app.globalData.accuracy],
         success: res => {
           this.bgPic = res.path
           console.log(res.width)
           console.log(res.height)
-          console.log(app.globalData.aestheticscore)
+          console.log(app.globalData.result)
+          console.log(app.globalData.accuracy)
         }
       }),
         this.setData({
-          bgPic: app.globalData.bgPic,
-          text: app.globalData.aestheticscore
+          bgPic: options.img,
+          text1: app.globalData.result,
+          text2: app.globalData.accuracy
+
         })
     },
   getUserInfo: function(e) {
