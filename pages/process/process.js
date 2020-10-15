@@ -10,20 +10,6 @@ Page({
   
   },
   //事件处理函数
-  
-  back: function (e) {
-    wx.navigateBack({
-      delta: 0,
-    })
-    console.log('fanhui');
-  },
-
-  nextPage:function(e){
-    wx.navigateTo({
-      url: '../process/process',
-    })
-    },
-  
 
     onLoad: function (options) {
       wx.getImageInfo({

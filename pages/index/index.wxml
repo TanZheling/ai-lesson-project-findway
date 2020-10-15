@@ -1,8 +1,10 @@
 <!--index.wxml-->
 <view>
-  <button bindtap='navigater'>
+  <button bindtap='actionSheetTap'>
     <image class = "cherry" src='../../image/cherry-blossom.jpg'></image>
     <!--image src='../../image/cherry-blossom.jpg'></image-->
     <text>寻路</text>
   </button>
   </view>
+
+  <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange"></action-sheet>
