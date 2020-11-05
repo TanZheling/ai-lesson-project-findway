@@ -3,13 +3,37 @@
     "pages/index/index",
     "pages/navigater/navigater",
     "pages/logs/logs",
-    "pages/process/process"
+    "pages/process/process",
+    "pages/choice/choice1/choice1",
+    "pages/choice/choice2/choice2",
+    "pages/choice/choice3/choice3"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"#444",
+    "selectedColor":"#219bf3",
+    "backgroundColor":"#e0e0e0",
+    "borderStyle":"white",
+    "position":"bottom",
+    "list":[
+      {
+        "text":"识路",
+        "pagePath":"pages/index/index",
+        "iconPath":"image/camera.png",
+        "selectedIconPath":"image/cameraSelected.png"
+      },
+      {
+        "text":"选择题",
+        "pagePath":"pages/choice/choice1/choice1",
+        "iconPath":"image/choice.png",
+        "selectedIconPath":"image/choiceSelected.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

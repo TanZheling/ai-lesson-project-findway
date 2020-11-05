@@ -1,0 +1,10 @@
+<!--pages/choice/choice3/choice3.wxml-->
+<view class = "wrongRate">
+  <text>一共错了{{wrong}}条</text>
+</view>
+<view class = "buttonRestart">
+  <button bindtap = 'restart'>
+  <text>重新开始</text>
+  </button>
+</view>
+

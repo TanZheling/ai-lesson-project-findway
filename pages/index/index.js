@@ -12,7 +12,7 @@ Page({
   actionSheetTap: function(e) {
     var that = this;
     wx.showActionSheet({
-      itemList: ['拍照','相册选择','取消'],
+      itemList: ['拍照','相册选择'],
       success(res) {
         console.log(res.tapIndex)
         if (res.tapIndex == 0) 
@@ -22,9 +22,6 @@ Page({
         if (res.tapIndex == 1) 
         {
           that.chooseImageFromPhotoAlbum();
-        }
-        if(res.tapIndex ==2)
-        {
         }
       },
     }) 
@@ -57,7 +54,6 @@ Page({
       sourceType: ['album'],
 
       success: function (res) {
-        console.log(res);
         that.setData({
           bgPic: res.tempFilePaths[0]
         });
@@ -80,7 +76,7 @@ Page({
       success: function (res) {
         console.log(res);
         _this.setData({
-          bgPic: res.tempFilePaths[0]
+          bgPic: res.tempFile
         });
       }
     })

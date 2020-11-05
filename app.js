@@ -33,10 +33,17 @@ App({
       }
     })
   },
+
   globalData: {
     userInfo: null,
     bgPic:null,
     result:null,
-    accuracy:null
+    accuracy:null,
+    questions: [
+      { "question": "../../../image/001.jpg", "option": { "A": "教五前的路", "B": "万林附近的路", "C": "自强大道", "D": "弘毅大道" }, "true": "B" },
+      { "question": "../../../image/002.jpg", "option": { "A": "文体路", "B": "学府路", "C": "梅园一路", "D": "自强大道" }, "true": "A" },
+      { "question": "../../../image/003.jpg", "option": { "A": "桂园路", "B": "樱花大道", "C": "梅操旁的路", "D": "奥场旁的路" }, "true": "D" },
+      { "question": "../../../image/004.jpg", "option": { "A": "珞珈山路", "B": "自强大道", "C": "人文路", "D": "梅园二路" }, "true": "B" },
+    ]
   }
 })

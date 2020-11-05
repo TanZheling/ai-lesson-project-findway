@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view>
+<view class = "initial">
   <button bindtap='actionSheetTap'>
     <image class = "cherry" src='../../image/cherry-blossom.jpg'></image>
     <!--image src='../../image/cherry-blossom.jpg'></image-->
