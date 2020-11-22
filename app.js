@@ -38,5 +38,8 @@ App({
     bgPic:null,
     result:null,
     accuracy:null
+  },
+  onError: function (err) {
+    console.log(err)
   }
 })

@@ -80,12 +80,14 @@ wx.getSystemInfo({
       url: 'https://www.tanzheling.cn/upload', //服务器链接
       filePath: that.data.bgPic,
       name: 'file',
-     
+      //method: 'GET',
       header: {
-        'content-type': 'multipart/form-data'
+        //'content-type': 'multipart/form-data'
+        'content-type': 'application/json'
+        //'content-type':'application/x-www-form-urlencoded'
       },
       success: function (res) {
-        // console.log(res.data);
+        console.log(res.data);
         wx.hideToast();
         console.log(res.statusCode);
         if (res.statusCode == 200) {
@@ -128,8 +130,10 @@ wx.getSystemInfo({
       },
       fail: function (res) {
         console.log(res);
+        console.log('bad news!!!!')
       }
     })
+
   },
 
   onLoad: function (options) {
