@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-  bgPic:null,
+  //bgPic:null,
   text1:null,
   text2:null,
   
@@ -16,7 +16,7 @@ Page({
         src: app.globalData.bgPic,
         text: [app.globalData.result,app.globalData.accuracy],
         success: res => {
-          this.bgPic = res.path
+          //this.bgPic = res.path
           console.log(res.width)
           console.log(res.height)
           console.log(app.globalData.result)
@@ -24,18 +24,11 @@ Page({
         }
       }),
         this.setData({
-          bgPic: options.img,
+          bgPic: app.globalData.bgPic,
           text1: app.globalData.result,
           text2: app.globalData.accuracy
 
         })
     },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  }
+ 
 })
